@@ -8,13 +8,17 @@ public class car_behavior : MonoBehaviour
 {
     public GameObject mphText;
     public GameObject milesDrivenText;
+    public GameObject driverNameText;
 
     private static int mph;
     private static double miles;
 
+    public string driverName;
+
     // Start is called before the first frame update
     void Start()
     {
+        driverNameText.GetComponent<Text>().text = driverName;
         mph = 0;
         miles = 0;
     }
