@@ -66,6 +66,13 @@ public class car_movement : MonoBehaviour
             Quaternion deltaRotationLeft = Quaternion.Euler(steerLeft * Time.deltaTime);
             rb.MoveRotation(rb.rotation * deltaRotationLeft);
         }
+
+        if (Input.GetKey("space"))
+        {
+            Debug.Log("space button hit");
+            Quaternion resetPostion = Quaternion.Euler(Vector3.zero);
+            rb.MoveRotation(resetPostion);
+        }
     }
 
     // On car collision
