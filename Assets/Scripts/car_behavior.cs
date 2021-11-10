@@ -51,6 +51,14 @@ public class car_behavior : MonoBehaviour
     }
     public static void Decelerate()
     {
-        mph -= 5;
+        if(mph < 0)
+        {
+            mph = 0;
+        }
+        else
+        {
+            mph -= 5;
+        }
+        
     }
 }

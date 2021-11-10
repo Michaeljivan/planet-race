@@ -20,10 +20,31 @@ public class score_behavior : MonoBehaviour
     {
         scoreText.text = "Score " + score;
     }
-
-    public static void AddScore()
+    
+    // Score based on Gameobject
+    public static void BasicScore()
     {
-        // add points to score
+        // add points to base score
         score += 1;
+    }
+    public static void CarScore()
+    {
+        score += 4;
+    }
+    public static void VanScore()
+    {
+        score += 5;
+    }
+    public static void BusScore()
+    {
+        score += 6;
+    }
+    public static void TruckScore()
+    {
+        score += 9;
+    }
+    public static void GasScore()
+    {
+        score += 25;
     }
 }
