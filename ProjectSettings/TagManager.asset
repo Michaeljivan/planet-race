@@ -9,6 +9,7 @@ TagManager:
   - van
   - truck
   - bus
+  - gasCan
   layers:
   - Default
   - TransparentFX

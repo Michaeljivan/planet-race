@@ -102,6 +102,12 @@ public class car_movement : MonoBehaviour
             score_behavior.TruckScore();
             Destroy(collision.gameObject);
         }
+
+        if(collision.gameObject.tag == "gasCan")
+        {
+            score_behavior.GasScore();
+            Destroy(collision.gameObject);
+        }
     }
 
 }
